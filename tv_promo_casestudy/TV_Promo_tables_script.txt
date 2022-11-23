@@ -1,0 +1,97 @@
+CREATE TABLE [dbo].[UserMaster](
+    [UserId] [int] IDENTITY(1,1) NOT NULL,
+    [FirstName] [varchar](20) NOT NULL,
+    [LastName] [varchar](20) NULL,
+    [Username] [varchar](20) NOT NULL,
+    [Password] [varchar](40) NOT NULL,
+    [UserTypeId] [int] NOT NULL,
+PRIMARY KEY CLUSTERED
+(
+    [UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+CREATE TABLE [dbo].[UserType](
+    [UserTypeId] [int] NOT NULL,
+    [UserType] [varchar](20) NOT NULL,
+PRIMARY KEY CLUSTERED
+(
+    [UserTypeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+CREATE TABLE [dbo].[Cities](
+    [City_Id] [int] IDENTITY(1,1) NOT NULL,
+    [City_Name] [varchar](100) NOT NULL,
+    [State_Id] [int] NOT NULL,
+CONSTRAINT [PK_Cities] PRIMARY KEY CLUSTERED
+(
+    [City_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Countries]    Script Date: 08-11-2022 01:33:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Countries](
+    [Country_Id] [int] IDENTITY(1,1) NOT NULL,
+    [ShortName] [varchar](10) NOT NULL,
+    [Country_Name] [varchar](150) NOT NULL,
+    [PhoneCode] [int] NOT NULL,
+PRIMARY KEY CLUSTERED
+(
+    [Country_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[States]    Script Date: 08-11-2022 01:33:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[States](
+    [State_Id] [int] IDENTITY(1,1) NOT NULL,
+    [State_Name] [varchar](100) NOT NULL,
+    [Country_Id] [int] NULL,
+CONSTRAINT [PK_States] PRIMARY KEY CLUSTERED
+(
+    [State_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+CREATE TABLE [dbo].[TvPromo](
+	[Promo_ID] [int] IDENTITY(1,1) NOT NULL,
+    [PromoCode] [int] NOT NULL,
+    [PromoDate] [datetime] NULL,
+    [EventName] [varchar](150) NULL,
+    [EventDate] [date] NULL,
+    [EventTime] [datetime] NULL,
+    [VenueName] [varchar](500) NULL,
+	[Country] [varchar](20) NULL,
+    [State] [varchar](20) NULL,
+    [City] [varchar](20) NULL,
+	[Description] [nvarchar](max) NULL,
+    [TicketUrl] [nvarchar](max) NULL,
+	[Status] [int] NULL,
+    [Created_By] [int] NULL,
+CONSTRAINT [PK_TvPromo] PRIMARY KEY CLUSTERED
+(
+    [Promo_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+
+CREATE TABLE [dbo].[Promo_Status](
+	[Status_ID] [int] NOT NULL,
+	[Status_Type] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_Promo_Status] PRIMARY KEY CLUSTERED 
+(
+	[Status_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
