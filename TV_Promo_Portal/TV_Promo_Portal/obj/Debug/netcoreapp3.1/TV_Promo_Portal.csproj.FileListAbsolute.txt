@@ -8,6 +8,8 @@ C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bi
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\TV_Promo_Portal.pdb
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -31,6 +33,7 @@ C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bi
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -53,6 +56,7 @@ C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bi
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.csproj.AssemblyReference.cache
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.AssemblyInfoInputs.cache
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.AssemblyInfo.cs
@@ -66,7 +70,4 @@ C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\ob
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.dll
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.pdb
 C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.genruntimeconfig.cache
-C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.csproj.AssemblyReference.cache
-C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\cogdotnet1704\Desktop\mentor_session\TV_Promo_Portal\TV_Promo_Portal\obj\Debug\netcoreapp3.1\TV_Promo_Portal.csproj.CopyComplete

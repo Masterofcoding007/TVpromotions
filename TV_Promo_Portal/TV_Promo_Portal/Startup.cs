@@ -39,7 +39,7 @@ namespace TV_Promo_Portal
             services.AddDbContext<TV_PromoContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:Promo"]));
 
             //services.AddTransient<ITvPromoRepository, TvPromoRepository>();
-            services.AddControllers().AddNewtonsoftJson(); ;
+            services.AddControllers().AddNewtonsoftJson();
 
             //swagger enabled
             services.AddSwaggerGen(x =>

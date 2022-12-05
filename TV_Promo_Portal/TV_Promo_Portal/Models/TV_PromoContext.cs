@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -36,48 +35,50 @@ namespace TV_Promo_Portal.Models
             }
         }
 
-        internal Task GetTvPromoByPromoCode(int promoID)
-        {
-            throw new NotImplementedException();
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
 
             modelBuilder.Entity<City>(entity =>
             {
-                entity.Property(e => e.CityId).HasColumnName("City_Id");
+                entity.ToTable("cities");
 
-                entity.Property(e => e.CityName)
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(100)
+                    .HasMaxLength(30)
                     .IsUnicode(false)
-                    .HasColumnName("City_Name");
+                    .HasColumnName("name");
 
-                entity.Property(e => e.StateId).HasColumnName("State_Id");
+                entity.Property(e => e.StateId).HasColumnName("state_id");
 
                 entity.HasOne(d => d.State)
                     .WithMany(p => p.Cities)
                     .HasForeignKey(d => d.StateId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Cities_States");
+                    .HasConstraintName("FK_cities_states");
             });
 
             modelBuilder.Entity<Country>(entity =>
             {
-                entity.Property(e => e.CountryId).HasColumnName("Country_Id");
+                entity.ToTable("countries");
 
-                entity.Property(e => e.CountryName)
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(150)
                     .IsUnicode(false)
-                    .HasColumnName("Country_Name");
+                    .HasColumnName("name");
 
-                entity.Property(e => e.ShortName)
+                entity.Property(e => e.Phonecode).HasColumnName("phonecode");
+
+                entity.Property(e => e.Shortname)
                     .IsRequired()
-                    .HasMaxLength(10)
-                    .IsUnicode(false);
+                    .HasMaxLength(3)
+                    .IsUnicode(false)
+                    .HasColumnName("shortname");
             });
 
             modelBuilder.Entity<Login>(entity =>
@@ -130,20 +131,25 @@ namespace TV_Promo_Portal.Models
 
             modelBuilder.Entity<State>(entity =>
             {
-                entity.Property(e => e.StateId).HasColumnName("State_Id");
+                entity.ToTable("states");
 
-                entity.Property(e => e.CountryId).HasColumnName("Country_Id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.StateName)
+                entity.Property(e => e.CountryId)
+                    .HasColumnName("country_id")
+                    .HasDefaultValueSql("('1')");
+
+                entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(100)
+                    .HasMaxLength(30)
                     .IsUnicode(false)
-                    .HasColumnName("State_Name");
+                    .HasColumnName("name");
 
                 entity.HasOne(d => d.Country)
                     .WithMany(p => p.States)
                     .HasForeignKey(d => d.CountryId)
-                    .HasConstraintName("FK_States_Countries");
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_states_Countries");
             });
 
             modelBuilder.Entity<TvPromo>(entity =>

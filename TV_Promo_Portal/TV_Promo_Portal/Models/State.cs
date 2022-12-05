@@ -12,9 +12,9 @@ namespace TV_Promo_Portal.Models
             Cities = new HashSet<City>();
         }
 
-        public int StateId { get; set; }
-        public string StateName { get; set; }
-        public int? CountryId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int CountryId { get; set; }
 
         public virtual Country Country { get; set; }
         public virtual ICollection<City> Cities { get; set; }

@@ -79,7 +79,8 @@ namespace TV_Promo_Portal.Controllers
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                     {
-                    new Claim(ClaimTypes.Name, login.UserId.ToString())
+                    new Claim(ClaimTypes.Name, login.UserId.ToString()),
+                     new Claim(ClaimTypes.Role, login.UsertypeId.ToString())
                     }),
                     Expires = DateTime.Now.AddMinutes(120),
                     SigningCredentials = credentials

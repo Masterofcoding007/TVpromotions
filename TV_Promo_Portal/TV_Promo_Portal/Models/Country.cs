@@ -12,10 +12,10 @@ namespace TV_Promo_Portal.Models
             States = new HashSet<State>();
         }
 
-        public int CountryId { get; set; }
-        public string ShortName { get; set; }
-        public string CountryName { get; set; }
-        public int PhoneCode { get; set; }
+        public int Id { get; set; }
+        public string Shortname { get; set; }
+        public string Name { get; set; }
+        public int Phonecode { get; set; }
 
         public virtual ICollection<State> States { get; set; }
     }
